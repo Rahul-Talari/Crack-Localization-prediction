@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+  --font-zen-kaku-gothic-antique: "Zen Kaku Gothic Antique";
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-smi-8: 12.8px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #fafafa;
+  --color-gray-200: #757575;
+  --color-gray-300: #212121;
+  --color-dimgray: #616161;
+  --color-whitesmoke: #eee;
+  --color-silver: #bdbdbd;
+  --color-darkslategray: #424242;
+  --color-black: #000;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+  --br-5xl: 24px;
+}

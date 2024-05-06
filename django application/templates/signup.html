@@ -1,0 +1,144 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/signup_global.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Zen Kaku Gothic Antique:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" />
+
+  <!-- <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="../static/css/index.css"> -->
+
+</head>
+
+<body>
+
+  <div class="template-1sign-up">
+    <img class="bg-img-icon" alt="" src="../static/public/bgimg@2x.png" />
+
+    <div class="bg-overlay"></div>
+    <div class="div-section">
+      <div class="main-div"></div>
+      <div class="form_header">
+        <div class="lets-get-you_in">LET'S GET YOU STARTED</div>
+        <div class="create-account">Create an Account</div>
+      </div>
+
+      <div class="form">
+        <div class="input-parent">
+
+          <form id="loginForm" action="{% url 'login' %}" target="_blank">
+
+            <div class="animate-label input1">
+
+              <input type="text" id="username" required />
+              <label for="username">
+                Your name
+              </label>
+              <line></line>
+            </div>
+
+            <div class="animate-label input1">
+
+              <input type="text" id="email" required />
+              <label for="email">
+                Email or phone
+              </label>
+              <line></line>
+            </div>
+
+            <div class="animate-label input1">
+              <input type="password" id="password" required />
+              <label for="password">
+                Password
+              </label>
+              <line></line>
+            </div>
+
+            <button type="submit" class="custom-btn btn-3-tan long">
+              <span>Sign Up</span>
+            </button>
+
+          </form>
+        </div>
+
+        <!-- <form action="{% url 'login' %}" target="_blank">
+          <button type="submit" class="custom-btn btn-3-tan long">
+              <span>Sign Up</span>
+          </button>
+      </form> -->
+      
+
+      </div>
+
+
+      <div class="btn-outlinevertical">
+        <div class="btn-outlinetemplate1-copy">
+          <div class="btn-outlinetemplate1-copy-child"></div>
+          <div class="sign-up-with">Sign up with Google</div>
+          <img class="icons8-google" alt="" src="../static/public/icons8google.svg" />
+        </div>
+        <div class="btn-outlinetemplate1-copy">
+          <div class="btn-outlinetemplate1-copy-child"></div>
+          <img class="icons8-google" alt="" src="../static/public/icons8facebook.svg" />
+
+          <div class="sign-up-with">Sign up with Facebook</div>
+        </div>
+        <div class="btn-outlinetemplate1-copy">
+          <div class="btn-outlinetemplate1-copy-child"></div>
+          <div class="sign-up-with">Sign up with Apple</div>
+          <img class="apple-icon" alt="" src="../static/public/apple.svg" />
+        </div>
+      </div>
+      <div class="divider-label">
+        <img class="line-divider-icon" alt="" src="../static/public/linedivider.svg" />
+
+        <div class="divider-bg"></div>
+        <b class="or">Or</b>
+      </div>
+      <div class="already-have-an-container">
+        <span class="already-have-an">Already have an account?</span>
+        <b> </b>
+        <b>
+          <span><a href="{% url 'login' %}" class="login-here">LOGIN HERE</a>
+          </span>
+        </b>
+      </div>
+    </div>
+
+
+    <img class="carousel-slider-icon" alt="" src="../static/public/carouselslider.svg" />
+
+    <div class="slide-parent">
+      <div class="slide">
+        <div class="header1">
+          <b class="building-the-future">AI-driven Residual Life Estimation of Composite Structures</b>
+          <div class="lorem-ipsum-dolor">
+            Discover AI-powered Residual Life Estimation for composite
+            structures. Predict remaining service life with precision.
+            Optimize maintenance and extend asset lifespan. Experience
+            advanced engineering insights and data-driven solutions.
+          </div>
+        </div>
+      </div>
+      <div class="pattern-1-parent">
+        <img class="pattern-1-icon" alt="" src="../static/public/pattern-1.svg " />
+
+        <b class="beam-health-logo1">BEAM HEALTH</b>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

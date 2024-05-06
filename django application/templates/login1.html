@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login_global.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login1.css' %}">
+  
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
+    
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Zen Kaku Gothic Antique:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="template-1log-in">
+      <img class="bg-img-icon" alt="" src="../static/public/bgimg@2x.png" />
+
+      <div class="bg-overlay"></div>
+      <div class="div-section">
+        <div class="group">
+          <div class="main-div"></div>
+        </div>
+        <div class="header">
+          <div class="lets-get-you">WELCOME BACK</div>
+          <div class="create-account">Log In to your Account</div>
+        </div>
+        <div class="form">
+
+          <!-- <div class="input-copy-parent">
+            <div class="input-copy">
+              <div class="input"></div>
+              <div class="johnsondoenomailcom">johnsondoe@nomail.com</div>
+              <div class="label">
+                <div class="divider"></div>
+                <div class="email">Email</div>
+              </div>
+            </div>
+            <div class="input-copy-2">
+              <div class="input1"></div>
+              <img class="ex-iconeye" alt="" src="./public/exiconeye.svg" />
+
+              <div class="johnsondoenomailcom">***************</div>
+              <div class="label1">
+                <div class="divider"></div>
+                <div class="password">Password</div>
+              </div>
+            </div>
+          </div> -->
+
+          <form id="loginForm" action="{% url 'home' %}">
+
+            <div class="animate-label input1 bar-width" style="width: 370px;">
+                
+                <input type="text" id="username" required/>
+                <label for="username">
+                    Email or phone
+                </label>
+                <line></line>
+            </div>
+
+            <div class="animate-label input1 bar-width">
+                <input type="password" id="password" required/>
+                <label for="password">
+                    Password
+                </label>
+                <line></line>
+            </div>
+            
+            <div class="checkboxlabel-parent" style="margin: 15px 0 0 0;">
+              <div class="checkboxlabel">
+                <div class="terms">Remember me</div>
+                <div class="checkbox">
+                  <!-- <div class="rectangle"></div>
+                  <img
+                    class="new-shape-icon"
+                    alt=""
+                    src="../static/public/new-shape.svg"
+                  /> -->
+                    <input class="new-shape-icon" type="checkbox" class="check" style="margin: auto;height: 15px;width: 15px;">
+                </div>
+              </div>
+              <div class="forgot-password">Forgot Password?</div>
+            </div>
+
+              <button type="submit" class="custom-btn btn-3-tan long ">
+                <span>Login</span>
+              </button>
+
+            </form>
+
+
+
+        </div>
+        <div class="btn-outlinevertical">
+          <div class="btn-outlinetemplate1-copy">
+            <div class="btn-outlinetemplate1-copy-child"></div>
+            <div class="sign-up-with">Log In with Google</div>
+            <img class="icons8-google" alt="" src="../static/public/icons8google.svg" />
+          </div>
+          <div class="btn-outlinetemplate1-copy">
+            <div class="btn-outlinetemplate1-copy-child"></div>
+            <img
+              class="icons8-google"
+              alt=""
+              src="../static/public/icons8facebook.svg"
+            />
+
+            <div class="sign-up-with">Log In with Facebook</div>
+          </div>
+          <div class="btn-outlinetemplate1-copy">
+            <div class="btn-outlinetemplate1-copy-child"></div>
+            <div class="sign-up-with">Log In with Apple</div>
+            <img class="apple-icon" alt="" src="../static/public/apple.svg" />
+          </div>
+        </div>
+        <div class="divider-label">
+          <img
+            class="line-divider-icon"
+            alt=""
+            src="../static/public/linedivider.svg"
+          />
+
+          <div class="divider-bg"></div>
+          <b class="or">Or</b>
+        </div>
+        <div class="already-have-an-container">
+          <span class="new-user">New User?</span>
+          <b>
+            <!-- <span class="sign-up-here">SIGN UP HERE</span> -->
+            <span><a href="{% url 'signup' %}" class="sign-up-here">SIGN UP HERE</a>
+            </span>
+          </b>
+        </div>
+      </div>
+      <div class="slide-parent">
+        <div class="slide">
+          <div class="header1">
+            <b class="building-the-future"
+              >AI-driven Residual Life Estimation of Composite Structures</b
+            >
+            <div class="lorem-ipsum-dolor">
+              Discover AI-powered Residual Life Estimation for composite
+              structures. Predict remaining service life with precision.
+              Optimize maintenance and extend asset lifespan. Experience
+              advanced engineering insights and data-driven solutions.
+            </div>
+          </div>
+        </div>
+        <div class="pattern-1-parent">
+          <img class="pattern-1-icon" alt="" src="../static/public/pattern-1.svg" />
+
+          <b class="beam-health">BEAM HEALTH</b>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

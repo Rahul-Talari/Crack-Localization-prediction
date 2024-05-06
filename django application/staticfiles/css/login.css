@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+.brand{
+    display: flex;
+}
+.brand_text{
+    margin: auto;
+    margin-left: 30px;
+    color: var(--dark-blue);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.animate-label {
+    position: relative;
+    margin-top: 30px;
+}
+.animate-label label {
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    transition: 0.3s all ease;
+    font-size: 14px;
+    width: 100%;
+    color: #888;
+}
+.animate-label input:valid + label, .animate-label input:focus + label {
+    bottom: 30px;
+    font-size: 10px;
+}
+.animate-label input:focus + label {
+    color: var(--dark-blue);
+}
+.animate-label line:before {
+    content: '';
+    position: absolute;
+    background:var(--dark-blue);
+    width: 0px;
+    height: 2px;
+    right: 50%;
+    bottom: 0;
+}
+.animate-label input:focus ~ line:before {
+    width: 100%;
+    right: 0;
+    transition: all 0.3s ease;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f6f6f6;
+}
+.wrapper {
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(360, 360, 360, .95);
+    padding: 50px;
+    animation: fadeInBackground 2s ease-in-out;
+  }
+  
+  @keyframes fadeInBackground {
+    0% { background: rgba(360, 360, 360, 0); }
+    100% { background: rgba(360, 360, 360, .95); }
+  }
+  
+img {
+    width: 80px;
+}
+h1 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 34px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+}
+input:focus {
+    outline: none;
+}
+input#password {
+    margin-top: 15px;
+}
+a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    display: block;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+    background-color: var(--dark-blue);
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.26);
+    margin-top: 30px;
+}
