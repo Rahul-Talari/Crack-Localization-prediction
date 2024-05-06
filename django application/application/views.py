@@ -46,7 +46,7 @@ def home(request):
             length, depth = round(predictions[0][0], 2), round(predictions[0][1], 2)
 
             # Apply the stress model to get the stress intensity factor (SIF) & Determine severity based on SIF
-            sif = round(stress_value / 150, 2)
+            sif = round(stress_value / 150000000, 2)
             if 0 < sif <= 0.2:
                 severe = "Low severity" 
             elif 0.2 < sif <= 0.5:
@@ -55,7 +55,11 @@ def home(request):
                 severe = "High severity" 
 
             # Estimate remaining life
-            life = round(math.exp((math.log(stress_value) - 8.898) / -0.199), 2)
+            logi=math.log(stress_value,10)
+            subtract= logi-8.898
+            divide=subtract/-0.199
+            life=round(10**divide,2)
+
 
         context = {
             'prediction': prediction, 
